@@ -21,7 +21,7 @@
 | Field                 | Value                             |
 |-----------------------|-----------------------------------|
 | Data Type             |Numeric                                   |
-| Length                |10                                   |
+| Length                |                                 |
 | Decimal Places        |0                                   |
 | Character Support     | [ ] Letters (A-Z)                 |
 |                       | [x] Numbers (0-9)                 |
@@ -85,7 +85,7 @@
 | Field                 | Value                             |
 |-----------------------|-----------------------------------|
 | Data Type             |Numeric                                   |
-| Length                |10                                   |
+| Length                |                                   |
 | Decimal Places        |0                                   |
 | Character Support     | [ ] Letters (A-Z)                 |
 |                       | [x] Numbers (0-9)                 |
@@ -140,7 +140,7 @@
 |                       | [ ] Replica                       |
 |                       |                                   |
 | Source Specification  |                                   |
-| Shared By             |UI                                   |
+| Shared By             |                              |
 | Description           |The name of each movie                                   |
 
 
