@@ -1,9 +1,14 @@
-DROP TABLE IF EXISTS Sale;
-DROP TABLE IF EXISTS Trial;
-DROP TABLE IF EXISTS Rugs;
-DROP TABLE IF EXISTS Customers;
-DROP TABLE IF EXISTS Address;
-DROP TABLE IF EXISTS Description;
+-- DROP TABLE IF EXISTS Sale;
+-- DROP TABLE IF EXISTS Trial;
+-- DROP TABLE IF EXISTS Rugs;
+-- DROP TABLE IF EXISTS Customers;
+-- DROP TABLE IF EXISTS Address;
+-- DROP TABLE IF EXISTS Description;
+DROP DATABASE IF EXISTS flying_carpets;
+CREATE DATABASE flying_carpets;
+
+-- CREATE OR REPLACE DATABASE flying_carpets;
+USE flying_carpets;
 
 CREATE TABLE Description (
     description_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -18,7 +23,7 @@ CREATE TABLE Rugs (
     inventory_id       INT PRIMARY KEY,
     description_id     INT NOT NULL,
     purchase_price     INT NOT NULL,
-    date_acquired      DATE NOT NULL, --will be used to compare with sale_date
+    date_acquired      DATE NOT NULL, -- will be used to compare with sale_date
     markup_percentage  CHAR(10) NOT NULL,
     list_price_int     INT NOT NULL, 
     status             CHAR(20) NOT NULL,
@@ -31,7 +36,7 @@ CREATE TABLE Rugs (
 CREATE TABLE Address (
     address_id INT NOT NULL,
     PRIMARY KEY (address_id),
-    FOREIGN KEY (address_id),
+    FOREIGN KEY (address_id), -- FIXME
     street     CHAR(50) NOT NULL,
     city       CHAR(30) NOT NULL,
     state      CHAR(20) NOT NULL,
