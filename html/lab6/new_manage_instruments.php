@@ -37,6 +37,7 @@ if (isset($_POST["logout"])) {
 if (isset($_POST["toggle_mode"])) {
     if (isset($_COOKIE["mode"]) && $_COOKIE["mode"] === "dark") {
         setcookie("mode", "light", time() + (10 * 365 * 24 * 60 * 60));
+    // "All cookies expire as per the cookie specification, so this is not a PHP limitation. Use a far future date. For example, set a cookie that expires in ten years:"
     } else {
         setcookie("mode", "dark", time() + (10 * 365 * 24 * 60 * 60));
     }
